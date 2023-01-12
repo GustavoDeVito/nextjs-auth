@@ -23,7 +23,7 @@ export default function useAuth(shouldRedirect: any) {
             }
             setIsAuthenticated(true);
         }
-    }, [session]);
+    }, [router, session, shouldRedirect]);
 
     return isAuthenticated;
 }
